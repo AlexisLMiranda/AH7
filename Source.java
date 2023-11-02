@@ -1,4 +1,5 @@
 class Node<T> {
+  public int data;
   T val;
   Node<T> next;
 
@@ -10,9 +11,22 @@ class Node<T> {
 
 class Source {
   public static int sumList(Node<Integer> head) {
-    // todo
-    return;
+
+    Node<Integer> pointer = head;
+    int sum = 0;
+
+    git addwhile (pointer != null) { // Validation
+      sum = sum + pointer.val;
+      pointer = pointer.next;
+    }
+      return sum;
   }
+
+
+
+
+
+
 
   public static void main(String[] args) {
     Node<Integer> a = new Node<>(2);
